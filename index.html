@@ -3,25 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BINABOX</title>
+    <title>BINABOX Homepage</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <nav class="main-navigation">
-        <a class="main-navigation__link" href="index.html">Homepage</a>
-        <a class="main-navigation__link" href="blog.html">Blog</a>
-        <a class="main-navigation__link" href="catalog.html">Catalog</a>
-        <a class="main-navigation__link" href="contacts.html">Contact us</a>
-        <div class="search-bar">
+    <header class="header">
+      <nav class="header-navigation">
+        <a class="header-navigation__link" href="index.html">Homepage</a>
+        <a class="header-navigation__link" href="blog.html">Blog</a>
+        <a class="header-navigation__link" href="catalog.html">Catalog</a>
+        <a class="header-navigation__link" href="contacts.html">Contact us</a>
+        <div class="header-navigation__searchbar">
           <input type="text" placeholder="search" />
         </div>
-        <div class="social-links">
-          <a href="https://discord.com">
+        <div>
+          <a class= "header-navigation__link" href="https://discord.com">
             <img src="discord.png" alt="Discord">
           </a>
-          <button>Connect
-          </button>
+          <button class="button button--primary header__button">Connect</button>
         </div>
       </nav>
     </header>
@@ -43,35 +42,35 @@
         <button>&lt;</button>
         <button>&gt;</button>
 
-        <article class="product">
-          <img src="skeleton.png" alt="Skeleton NFT" />
-          <span class="badge new"> new </span>
-          <p class="price">$199</p>
-          <p class="name">Name Product</p>
+        <article class="product-card">
+          <img class="product-card__image"src="skeleton.png" alt="Skeleton NFT" />
+          <span class="badge badge--updated"> new </span>
+          <p class="product-card__price">$199</p>
+          <p class="product-card__name">Name Product</p>
         </article>
-        <article class="product">
-          <img src="Cat.png" alt="Cat NFT" />
-          <span class="badge new">new</span>
-          <p class="price">$199</p>
-          <p class="name">Name Product</p>
+        <article class="product-card">
+          <img class="product-card__image"src="Cat.png" alt="Cat NFT" />
+          <span class="badge badge--updated">new</span>
+          <p class="product-card__price">$199</p>
+          <p class="product-card__name">Name Product</p>
         </article>
-        <article class="product">
-          <img src="scissors.png" alt="Scissors NFT" />
+        <article class="product-card">
+          <img class="product-card__image"src="scissors.png" alt="Scissors NFT" />
           <span class="badge sold-out">sold out</span>
-          <p class="price">$199</p>
-          <p class="name">Name Product</p>
+          <p class="product-card__price">$199</p>
+          <p class="product-card__name">Name Product</p>
         </article>
-        <article class="product">
-          <img src="book.png" alt="book NFT" />
-          <span class="badge new">new</span>
-          <p class="price">$199</p>
-          <p class="name">Name Product</p>
+        <article class="product-card">
+          <img class="product-card__image" src="book.png" alt="book NFT" />
+          <span class="badge badge">new</span>
+          <p class="product-card__price">$199</p>
+          <p class="product-card__name">Name Product</p>
         </article>
-        <article class="product">
-          <img src="gamepad.png" alt="gamepad NFT" />
-          <span class="badge new">new</span>
-          <p class="price">$199</p>
-          <p class="name">Name Product</p>
+        <article class="product-card">
+          <img class="product-card__image"src="gamepad.png" alt="gamepad NFT" />
+          <span class="badge badge--updated">new</span>
+          <p class="product-card__price">$199</p>
+          <p class="product-card__name">Name Product</p>
         </article>
       </section>
       <h2>Our Blog</h2>
@@ -219,12 +218,12 @@
                   <p>Co - Founder</p>
                    </article>
                   </div>
-                  <div class="social-links">
-                    <a href="https://x.com/?lang=en"><img src="twitter.png" alt="Twitter"></a>
-                    <a href="https://www.facebook.com/"><img src="facebook.png" alt="Facebook"></a>
-                    <a href="https://web.telegram.org/a/"><img src="telegram.png" alt="Telegram"></a>
-                    <a href="https://www.linkedin.com/"><img src="linkedin.png" alt="LinkedIn"></a>
-                    <a href="https://www.instagram.com/"><img src="instagram.png" alt="Instagram"></a>
+                  <div class="social-icons team-grid__socials">
+                    <a class="social-icons__link"href="https://x.com/?lang=en"><img src="twitter.png" alt="Twitter"></a>
+                    <a class="social-icons__link" href="https://www.facebook.com/"><img src="facebook.png" alt="Facebook"></a>
+                    <a class="social-icons__link"href="https://web.telegram.org/a/"><img src="telegram.png" alt="Telegram"></a>
+                    <a class="social-icons__link"href="https://www.linkedin.com/"><img src="linkedin.png" alt="LinkedIn"></a>
+                    <a class="social-icons__link"href="https://www.instagram.com/"><img src="instagram.png" alt="Instagram"></a>
                   </div>
                   <div class="team-grid">
                     <article class="team-member">
@@ -233,8 +232,8 @@
                         <p>Co - Founder</p>
                          </article>
                         </div>
-                        <div class="social-links">
-                          <a href="https://x.com/?lang=en"><img src="twitter.png" alt="Twitter"></a>
+                        <div class="social-icons">
+                          <a class="social-icons__link"href="https://x.com/?lang=en"><img src="twitter.png" alt="Twitter"></a>
                           <a href="https://www.facebook.com/"><img src="facebook.png" alt="Facebook"></a>
                           <a href="https://web.telegram.org/a/"><img src="telegram.png" alt="Telegram"></a>
                           <a href="https://www.linkedin.com/"><img src="linkedin.png" alt="LinkedIn"></a>
@@ -312,29 +311,29 @@
         </details>
     </section>
     </main>
-    <footer>
+    <footer class="footer">
       <h3>Subscribe</h3>
-        <ul>
-          <li><a href="index.html">home</a></li>
-          <li><a href="blog.html">blog</a></li>
-          <li><a href="catalog.html">catalog</a></li>
-          <li><a href="contacts.html">contact us</a></li>
+        <ul class="footer-navigation">
+          <li><a class="footer-navigation__link" href="index.html">home</a></li>
+          <li><a class="footer-navigation__link" href="blog.html">blog</a></li>
+          <li><a class="footer-navigation__link" href="catalog.html">catalog</a></li>
+          <li><a class="footer-navigation__link" href="contacts.html">contact us</a></li>
         </ul>
       <h3>Company</h3>
-        <ul>
-          <li><a href="terms.html">Terms & Conditions</a></li>
-          <li><a href="privacy.html">Privacy Policy</a></li>
-          <li><a href="whitepaper.html">Whitepaper</a></li>
-          <li><a href="help.html">Help Center</a></li>
+        <ul class="footer-navigation">
+          <li><a class="footer-navigation__link" href="terms.html">Terms & Conditions</a></li>
+          <li><a class="footer-navigation__link" href="privacy.html">Privacy Policy</a></li>
+          <li><a class="footer-navigation__link" href="whitepaper.html">Whitepaper</a></li>
+          <li><a class="footer-navigation__link" href="help.html">Help Center</a></li>
         </ul>
     <p> BINABOX 2022 - All rights reserved</p>
-    <div class="social-icons">
-      <a href="https://x.com/?lang=en"><img src="twitter.png" alt="Twitter"></a>
-        <a href="https://www.facebook.com/"><img src="facebook.png" alt="Facebook"></a>
-        <a href="https://web.telegram.org/a/"><img src="telegram.png" alt="Telegram"></a>
-        <a href="https://www.youtube.com/"><img src="youtube.png" alt="YouTube"></a>
-        <a href="https://www.tiktok.com/"><img src="tiktok.png" alt="TikTok"></a>
-        <a href="https://discord.com"><img src="discord.png" alt="Discord"></a>
+    <div class="footer-navigation">
+      <a class="footer-navigation__icons" href="https://x.com/?lang=en"><img src="twitter.png" alt="Twitter"></a>
+        <a class="footer-navigation__icons" href="https://www.facebook.com/"><img src="facebook.png" alt="Facebook"></a>
+        <a class="footer-navigation__icons" href="https://web.telegram.org/a/"><img src="telegram.png" alt="Telegram"></a>
+        <a class="footer-navigation__icons" href="https://www.youtube.com/"><img src="youtube.png" alt="YouTube"></a>
+        <a class="footer-navigation__icons" href="https://www.tiktok.com/"><img src="tiktok.png" alt="TikTok"></a>
+        <a class="footer-navigation__icons" href="https://discord.com"><img src="discord.png" alt="Discord"></a>
     </div>
       </footer>
 </html>
