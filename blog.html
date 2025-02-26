@@ -26,13 +26,19 @@
         </div>
       </nav>
     </header>
-    <main>
+    <main class="main-blog">
       <h2>Our blog</h2>
       <section>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Our blog</a></li>
-          <li><a href="#">The Basilisks NFT</a></li>
+        <ul class="blog-navigation__list">
+          <li><a class="blog-navigation__list-details" href="#">Home</a></li>
+          <li>
+            <a class="blog-navigation__list-details" href="#">Our blog</a>
+          </li>
+          <li>
+            <a class="blog-navigation__list-details" href="#"
+              >The Basilisks NFT</a
+            >
+          </li>
         </ul>
       </section>
       <aside>
@@ -127,7 +133,7 @@
           </blockquote>
         </section>
 
-        <section class="images">
+        <section class="blog-images">
           <figure>
             <img
               src="image1.png"
@@ -137,6 +143,7 @@
           </figure>
           <figure>
             <img
+              class="blog-images"
               src="image2.png"
               alt="Another digital artwork of a mystical basilisk"
             />
@@ -145,9 +152,11 @@
         </section>
       </article>
 
-      <article>
-        <h2>NFTs are digital assets that represent real-world objects</h2>
-        <p>
+      <article class="blog-description">
+        <h2 class="blog-description__highlighted">
+          NFTs are digital assets that represent real-world objects
+        </h2>
+        <p class="blog-description">
           Setting up your avatar and personalizing your nickname on Binance is
           quick and easy. Users can go to binance.com under Dashboard > Settings
           > My Profile > Avatar and Nickname. For those of you who own NFT
@@ -155,7 +164,7 @@
           your avatar to personalize your profile. For users who do not own any
           NFT avatars, check out the NFT avatar collections page to get started.
         </p>
-        <p>
+        <p class="blog-description">
           Alternatively, if you’re on nft.binance.com, go to User Center >
           Settings > Basic > Set Avatar and Nickname, and you’ll be redirected
           to the main site. Binance NFT Creators have the option of setting
@@ -175,62 +184,88 @@
       <section class="tags">
         <h4>Tags:</h4>
         <ul>
-          <li><a href="#">NFT</a></li>
-          <li><a href="#">ICO</a></li>
-          <li><a href="#">Crypto</a></li>
+          <li><a class="tags-icons" href="#">NFT</a></li>
+          <li><a class="tags-icons" href="#">ICO</a></li>
+          <li><a class="tags-icons" href="#">Crypto</a></li>
         </ul>
       </section>
-      <section class="social-share">
+      <section class="tags">
         <h4>Share:</h4>
         <ul>
           <li>
-            <a href="#"><img src="twitter-icon.png" alt="Twitter" /></a>
+            <a class="tags-icons" href="#"
+              ><img src="twitter-icon.png" alt="Twitter"
+            /></a>
           </li>
           <li>
-            <a href="#"><img src="facebook-icon.png" alt="Facebook" /></a>
+            <a class="tags-icons" href="#"
+              ><img src="facebook-icon.png" alt="Facebook"
+            /></a>
           </li>
           <li>
-            <a href="#"><img src="instagram-icon.png" alt="Instagram" /></a>
+            <a class="tags-icons" href="#"
+              ><img src="instagram-icon.png" alt="Instagram"
+            /></a>
           </li>
         </ul>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <h3>Subscribe</h3>
-      <ul>
-        <li><a href="index.html">home</a></li>
-        <li><a href="blog.html">blog</a></li>
-        <li><a href="catalog.html">catalog</a></li>
-        <li><a href="contacts.html">contact us</a></li>
+      <ul class="footer-navigation">
+        <li><a class="footer-navigation__link" href="index.html">home</a></li>
+        <li><a class="footer-navigation__link" href="blog.html">blog</a></li>
+        <li>
+          <a class="footer-navigation__link" href="catalog.html">catalog</a>
+        </li>
+        <li>
+          <a class="footer-navigation__link" href="contacts.html">contact us</a>
+        </li>
       </ul>
       <h3>Company</h3>
-      <ul>
-        <li><a href="terms.html">Terms & Conditions</a></li>
-        <li><a href="privacy.html">Privacy Policy</a></li>
-        <li><a href="whitepaper.html">Whitepaper</a></li>
-        <li><a href="help.html">Help Center</a></li>
+      <ul class="footer-navigation">
+        <li>
+          <a class="footer-navigation__link" href="terms.html"
+            >Terms & Conditions</a
+          >
+        </li>
+        <li>
+          <a class="footer-navigation__link" href="privacy.html"
+            >Privacy Policy</a
+          >
+        </li>
+        <li>
+          <a class="footer-navigation__link" href="whitepaper.html"
+            >Whitepaper</a
+          >
+        </li>
+        <li>
+          <a class="footer-navigation__link" href="help.html">Help Center</a>
+        </li>
       </ul>
       <p>BINABOX 2022 - All rights reserved</p>
-      <div class="social-icons">
-        <a href="https://x.com/?lang=en"
+      <div class="footer-navigation">
+        <a class="footer-navigation__link" href="https://x.com/?lang=en"
           ><img src="twitter.png" alt="Twitter"
         /></a>
-        <a href="https://www.facebook.com/"
+        <a class="footer-navigation__link" href="https://www.facebook.com/"
           ><img src="facebook.png" alt="Facebook"
         /></a>
-        <a href="https://web.telegram.org/a/"
+        <a class="footer-navigation__link" href="https://web.telegram.org/a/"
           ><img src="telegram.png" alt="Telegram"
         /></a>
-        <a href="https://www.youtube.com/"
+        <a class="footer-navigation__link" href="https://www.youtube.com/"
           ><img src="youtube.png" alt="YouTube"
         /></a>
-        <a href="https://www.tiktok.com/"
+        <a class="footer-navigation__link" href="https://www.tiktok.com/"
           ><img src="tiktok.png" alt="TikTok"
         /></a>
-        <a href="https://discord.com"
+        <a class="footer-navigation__link" href="https://discord.com"
           ><img src="discord.png" alt="Discord"
         /></a>
       </div>
     </footer>
   </body>
 </html>
+
+
