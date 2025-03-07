@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BINABOX Homepage</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   </head>
   <body>
     <header class="header">
@@ -14,7 +17,7 @@
         <a class="header-navigation__link" href="catalog.html">Catalog</a>
         <a class="header-navigation__link" href="contacts.html">Contact us</a>
         <div class="header-navigation__searchbar">
-          <input type="text" placeholder="search" />
+        <input type="text" placeholder="search" />
         </div>
         <div>
           <a class= "header-navigation__link" href="https://discord.com">
@@ -25,59 +28,60 @@
       </nav>
     </header>
     <main>
-      <h1>
-        WITH BINABOX EXPLORE NFT COLLECTION
+      <div class="binabox">
+      <h1 class="binabox">
+        WITH <span>BINABOX  </span> EXPLORE NFT COLLECTION
       </h1>
       <p>
         We are the best way to check the rarity of NFT
         collection
       </p>
-      <div>2240+ <small>Total Items</small></div>
-      <div>1000+ <small>Profiles Whitelisted</small></div>
-      <button>Connect Wallet</button>
-      <button>Whitelist Now</button>
-      <section id="Catalog">
-        <h2>Catalog</h2>
-        <button>See all</button>
-        <button>&lt;</button>
-        <button>&gt;</button>
-
+      <div class="binabox__details">2240+ <small>Total Items</small></div>
+      <div class="binabox__details">1000+ <small>Profiles Whitelisted</small></div>
+      <button class="binabox__button">Connect Wallet</button>
+      <button class="binabox__button">Whitelist Now</button>
+      </div>
+      <section id="catalog">
+        <h2 class="catalog" >Catalog</h2>
+        <button class="catalog-button">&lt;</button>
+        <button class="catalog-button">&gt;</button>
+        <button class="catalog-button__see">See all</button>
         <article class="product-card">
           <img class="product-card__image"src="skeleton.png" alt="Skeleton NFT" />
-          <span class="badge badge--updated"> new </span>
+          <span class="badge-nft"> new </span>
           <p class="product-card__price">$199</p>
           <p class="product-card__name">Name Product</p>
         </article>
         <article class="product-card">
           <img class="product-card__image"src="Cat.png" alt="Cat NFT" />
-          <span class="badge badge--updated">new</span>
+          <span class="bafge-nft">new</span>
           <p class="product-card__price">$199</p>
           <p class="product-card__name">Name Product</p>
         </article>
         <article class="product-card">
           <img class="product-card__image"src="scissors.png" alt="Scissors NFT" />
-          <span class="badge sold-out">sold out</span>
+          <span class="badge-nft__soldout">sold out</span>
           <p class="product-card__price">$199</p>
           <p class="product-card__name">Name Product</p>
         </article>
         <article class="product-card">
           <img class="product-card__image" src="book.png" alt="book NFT" />
-          <span class="badge badge">new</span>
+          <span class="badge-nft">new</span>
           <p class="product-card__price">$199</p>
           <p class="product-card__name">Name Product</p>
         </article>
         <article class="product-card">
           <img class="product-card__image"src="gamepad.png" alt="gamepad NFT" />
-          <span class="badge badge--updated">new</span>
+          <span class="badge-nft">new</span>
           <p class="product-card__price">$199</p>
           <p class="product-card__name">Name Product</p>
         </article>
       </section>
-      <h2>Our Blog</h2>
       <section class="blog-list">
+        <h2 class="blog-list__title">Our Blog</h2>
         <article class="blog-post">
           <img src="face.png" alt="Face NFT" />
-          <span class="badge nft">NFT</span>
+          <span class="badge-nft">NFT</span>
           <div class="blog-content">
             <p class="author">Tony Nguyen 20 Jun 2022</p>
             <h3>Sonic live</h3>
@@ -90,7 +94,7 @@
         </article>
         <article class="blog-post">
           <img src="skeleton-blog.png" alt="Skeleton NFT Blog" />
-          <span class="badge nft">NFT</span>
+          <span class="badge-nft">NFT</span>
           <div class="blog-content">
             <p class="author">Tony Nguyen 20 Jun 2022</p>
             <h3>Sonic live</h3>
@@ -103,7 +107,7 @@
         </article>
         <article class="blog-post">
           <img src="cat-blog.png" alt="Cat NFT Blog" />
-          <span class="badge nft">NFT</span>
+          <span class="badge-nft">NFT</span>
           <div class="blog-content">
             <p class="author">Tony Nguyen 20 Jun 2022</p>
             <h3>Sonic live</h3>
@@ -156,7 +160,7 @@
       </section>
       <section class="about-us">
         <h2 class="about-us__title">About us</h2>
-        <p class="about-us__description">
+        <p class="about-us__title--description">
           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
           dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
           proident, sunt in culpa qui officia deserunt mollit anim id est
@@ -165,28 +169,28 @@
         </p>
         <div class="about-us__grid">
           <article class="about-us__feature">
-            <h3 class="about-us__item-description" span class="about-us__number">01</span> High quality</h3>
+            <h3> <span class="about-us__number">01</span> High quality</h3>
             <p class="about-us__description">
               Lorem Ipsum is simply dummy text of the printing and Ipsum
               typesetting industry.
             </p>
           </article>
           <article class="about-us__feature">
-            <h3><span class="highlight">02</span> Big collection</h3>
+            <h3><span class="about-us__number">02</span> Big collection</h3>
             <p class="about-us__description">
               Lorem Ipsum is simply dummy text of the printing and Ipsum
               typesetting industry.
             </p>
           </article>
           <article class="about-us__feature">
-            <h3><span class="highlight">03</span> Top Resource</h3>
+            <h3><span class="about-us__number">03</span> Top Resource</h3>
             <p class="about-us__description">
               Lorem Ipsum is simply dummy text of the printing and Ipsum
               typesetting industry.
             </p>
           </article>
           <article class="about-us__feature">
-            <h3><span class="highlight">04</span> Big community</h3>
+            <h3><span class="about-us__number">04</span> Big community</h3>
             <p class="about-us__description">
               Lorem Ipsum is simply dummy text of the printing and Ipsum
               typesetting industry.
@@ -295,10 +299,11 @@
                                                   <a class="social-icons__link" href="https://www.linkedin.com/"><img src="linkedin.png" alt="LinkedIn"></a>
                                                   <a class="social-icons__link" href="https://www.instagram.com/"><img src="instagram.png" alt="Instagram"></a>
                                                 </div>
+       <div class="faqs">                                       
       <h2>FAQs</h2>
         <details open>
-            <summary>What are the NFTs?</summary>
-            <p>Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus.</p>
+            <summary class="faqs-summary">What are the NFTs?</summary>
+            <p class="faqs-details">Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus.</p>
         </details>
         <details>
             <summary>How do I get NFTs?</summary>
