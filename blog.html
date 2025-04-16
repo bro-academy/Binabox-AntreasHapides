@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BINABOX-BLOGPAGE</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header class="header">
@@ -41,29 +47,29 @@
           </li>
         </ul>
       </section>
-      <aside>
+      <aside class="sidebar">
         <section>
           <h2>Categories</h2>
-          <ul class="blog-navigation__list">
-            <li class="blog-navigation__list-item">
+          <ul class="blog-navigation">
+            <li class="blog-navigation__list-categories">
               <a href="#">Our blog (12)</a>
             </li>
-            <li class="blog-navigation__list-item">
+            <li class="blog-navigation__list-categories">
               <a href="#">Metaverse (24)</a>
             </li>
-            <li class="blog-navigation__list-item">
+            <li class="blog-navigation__list-categories">
               <a href="#">Gaming (24)</a>
             </li>
-            <li class="blog-navigation__list-item">
+            <li class="blog-navigation__list-categories">
               <a href="#">Art (24)</a>
             </li>
-            <li class="blog-navigation__list-item">
+            <li class="blog-navigation__list-categories">
               <a href="#">Robot (24)</a>
             </li>
-            <li class="blog-navigation__list-item">
+            <li class="blog-navigation__list-categories">
               <a href="#">Launchpad (24)</a>
             </li>
-            <li class="blog-navigation__list-item">
+            <li class="blog-navigation__list-categories">
               <a href="#">Crypto (430)</a>
             </li>
           </ul>
@@ -86,7 +92,7 @@
           <img src="image.png" alt="Basilisk" />
           <figcaption>Photo caption</figcaption>
         </figure>
-        <h1>The Basilisks NFT</h1>
+        <h1 class="blog-title">The Basilisks NFT</h1>
         <span class="blog-category"><a href="#">Gaming</a></span>
         <p>
           <span class="author">Tony Nguyen</span> |
@@ -117,11 +123,19 @@
             called the Balthazar DAO.
           </li>
         </ul>
-        <ul>
-          <li><a href="#">List name 1</a></li>
-          <li><a href="#">List name 2</a></li>
-          <li><a href="#">List name 3</a></li>
-          <li><a href="#">List name 4</a></li>
+        <ul class="blog-navigation">
+          <li>
+            <a class="blog-navigation__list-name" href="#">List name 1</a>
+          </li>
+          <li>
+            <a class="blog-navigation__list-name" href="#">List name 2</a>
+          </li>
+          <li>
+            <a class="blog-navigation__list-name" href="#">List name 3</a>
+          </li>
+          <li>
+            <a class="blog-navigation__list-name" href="#">List name 4</a>
+          </li>
         </ul>
         <section class="highlight">
           <blockquote>
@@ -211,61 +225,98 @@
       </section>
     </main>
     <footer class="footer">
-      <h3>Subscribe</h3>
-      <ul class="footer-navigation">
-        <li><a class="footer-navigation__link" href="index.html">home</a></li>
-        <li><a class="footer-navigation__link" href="blog.html">blog</a></li>
-        <li>
-          <a class="footer-navigation__link" href="catalog.html">catalog</a>
-        </li>
-        <li>
-          <a class="footer-navigation__link" href="contacts.html">contact us</a>
-        </li>
-      </ul>
-      <h3>Company</h3>
-      <ul class="footer-navigation">
-        <li>
-          <a class="footer-navigation__link" href="terms.html"
-            >Terms & Conditions</a
-          >
-        </li>
-        <li>
-          <a class="footer-navigation__link" href="privacy.html"
-            >Privacy Policy</a
-          >
-        </li>
-        <li>
-          <a class="footer-navigation__link" href="whitepaper.html"
-            >Whitepaper</a
-          >
-        </li>
-        <li>
-          <a class="footer-navigation__link" href="help.html">Help Center</a>
-        </li>
-      </ul>
-      <p>BINABOX 2022 - All rights reserved</p>
-      <div class="footer-navigation">
-        <a class="footer-navigation__link" href="https://x.com/?lang=en"
-          ><img src="twitter.png" alt="Twitter"
-        /></a>
-        <a class="footer-navigation__link" href="https://www.facebook.com/"
-          ><img src="facebook.png" alt="Facebook"
-        /></a>
-        <a class="footer-navigation__link" href="https://web.telegram.org/a/"
-          ><img src="telegram.png" alt="Telegram"
-        /></a>
-        <a class="footer-navigation__link" href="https://www.youtube.com/"
-          ><img src="youtube.png" alt="YouTube"
-        /></a>
-        <a class="footer-navigation__link" href="https://www.tiktok.com/"
-          ><img src="tiktok.png" alt="TikTok"
-        /></a>
-        <a class="footer-navigation__link" href="https://discord.com"
-          ><img src="discord.png" alt="Discord"
-        /></a>
+      <div class="footer-container">
+        <div class="footer-logo">
+          <h2 class="footer">BINABOX</h2>
+          <p>We are the best way to check the entry of NFT collection.</p>
+          <p>BINABOX 2022 - All rights reserved</p>
+        </div>
+        <div class="subscribe">
+          <h3>Subscribe</h3>
+          <ul class="footer-navigation">
+            <li>
+              <a class="footer-navigation__link" href="index.html">Home</a>
+            </li>
+            <li>
+              <a class="footer-navigation__link" href="blog.html">Blog</a>
+            </li>
+            <li>
+              <a class="footer-navigation__link" href="catalog.html">Catalog</a>
+            </li>
+            <li>
+              <a class="footer-navigation__link" href="contacts.html"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="company">
+          <h3>Company</h3>
+          <ul class="footer-navigation">
+            <li>
+              <a class="footer-navigation__link" href="terms.html"
+                >Terms & Guidelines</a
+              >
+            </li>
+            <li>
+              <a class="footer-navigation__link" href="privacy.html"
+                >Privacy Policy</a
+              >
+            </li>
+            <li>
+              <a class="footer-navigation__link" href="whitepaper.html"
+                >Whitepaper</a
+              >
+            </li>
+            <li>
+              <a class="footer-navigation__link" href="help.html"
+                >Help Center</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="social-media">
+          <ul class="footer-navigation">
+            <li>
+              <a class="footer-navigation__icons" href="https://x.com/?lang=en"
+                ><img src="twitter.png" alt="Twitter"
+              /></a>
+            </li>
+            <li>
+              <a
+                class="footer-navigation__icons"
+                href="https://www.facebook.com/"
+                ><img src="facebook.png" alt="Facebook"
+              /></a>
+            </li>
+            <li>
+              <a
+                class="footer-navigation__icons"
+                href="https://web.telegram.org/a/"
+                ><img src="telegram.png" alt="Telegram"
+              /></a>
+            </li>
+            <li>
+              <a
+                class="footer-navigation__icons"
+                href="https://www.youtube.com/"
+                ><img src="youtube.png" alt="YouTube"
+              /></a>
+            </li>
+            <li>
+              <a class="footer-navigation__icons" href="https://www.tiktok.com/"
+                ><img src="tiktok.png" alt="TikTok"
+              /></a>
+            </li>
+            <li>
+              <a class="footer-navigation__icons" href="https://discord.com"
+                ><img src="discord.png" alt="Discord"
+              /></a>
+            </li>
+          </ul>
+        </div>
       </div>
+      <p class="copyright">BINABOX 2022 - All rights reserved</p>
     </footer>
   </body>
 </html>
-
-
