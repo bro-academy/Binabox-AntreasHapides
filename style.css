@@ -177,9 +177,7 @@ h1 span {
   height: 48px;
   gap: 20px;
   padding-top: 10px;
-  padding-right: Spacing24;
   padding-bottom: 10px;
-  padding-left: Spacing24;
   background: #0265dc;
 }
 /*binabox end*/
@@ -197,11 +195,8 @@ h1 span {
 .catalog__button--see {
   width: 108px;
   height: 48px;
-  gap: Spacing8;
   padding-top: 10px;
-  padding-right: Spacing24;
   padding-bottom: 10px;
-  padding-left: Spacing24;
   border-width: 2px;
   cursor: pointer;
   align-items: right;
@@ -220,8 +215,6 @@ h1 span {
   background-color: rgba(29, 28, 40, 1);
   width: 300;
   height: 480px;
-  gap: Spacing/Spacing24;
-  padding: Spacing/Spacing24;
   display: inline-block;
   text-align: center;
   position: relative;
